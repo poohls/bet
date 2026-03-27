@@ -1,0 +1,111 @@
+print (" =========================================\n")
+print ("|   		  TIGRINHO DA SORTE   	  |\n")
+print ("|                                         |\n")
+print ("|      QUANTO VOCÊ QUER APOSTAR?       |\n")
+print ("|                                         |\n")
+print ("|     	     R$1,00                  |\n")
+print ("|	     R$5,00			  |\n")
+print ("|    	     R$10,00 			  |\n")
+print ("|    	     R$30,00			  |\n")
+print ("|     	     R$50,00			  |\n")
+print ("|                                         |\n")
+print (" =========================================\n")
+
+dragao = """
+                \||/
+                |  @___oo
+      /\  /\   / (__,,,,|
+     ) /^\) ^\/ _)
+     )   /^\/   _)
+     )   _ /  / _)
+ /\  )/\/ ||  | )_)
+<  >      |(,,) )__)
+ ||      /    \)___)\
+ | \____(      )___) )___
+  \______(_______;;; __;;;
+"""
+          
+tigre = """          
+                         __,,,,_
+          _ __..-;''`--/'/ /.',-`-.
+      (`/' ` |  \ \ \\ / / / / .-'/`,_
+     /'`\ \   |  \ | \| // // / -.,/_,'-,
+    /<7' ;  \ \  | ; ||/ /| | \/    |`-/,/-.,_,/')
+   /  _.-, `,-\,__|  _-| / \ \/|_/  |    '-/.;.\'
+   `-`  f/ ;      / __/ \__ `/ |__/ |
+        `-'      |  -| =|\_  \  |-' |
+              __/   /_..-' `  ),'  //
+             ((__.-'((___..-'' \__.'
+"""
+
+urso = """
+          ( )___( )
+          /__oo   \
+         ( \/     )
+         | `=/    |
+        /         \
+       /  /    \   \
+      /  (      \   \ 
+     ( ,_/_      \   \
+      \_ '=       \   )
+        ""'       /  /
+        ;        /  /'?
+        :       (((( /
+   ctr   `._   \  _ (
+          __|   |  /_    
+        ("__,.."'_._.)   
+"""
+
+touro = """
+                   _.-````'-,_
+         _,.,_ ,-'`           `'-.,_
+       /)     (\                   '``-.
+      ((      ) )                      `\ 
+       \)    (_/                        )\ 
+        |       /)           '    ,'    / \ 
+        `\    ^'            '     (    /  ))
+          |      _/\ ,     /    ,,`\   (  "`
+           \Y,   |  \  \  | ````| / \_ \ 
+             `)_/    \  \  )    ( >  ( >
+                      \( \(     |/   |/
+                     /_(/_(    /_(  /_(
+"""
+
+coelho = """
+                    ____     ____
+                  /'    |   |    \ 
+                /    /  |   | \   \ 
+              /    / |  |   |  \   \ 
+             (   /   |  "" ""   |\   \ 
+             | /   / /^\    /^\  \  _|   
+              ~   | |   |  |   | | ~
+                  | |__O|__|O__| |
+                /~~      \/     ~~\ 
+               /   (      |      )  \ 
+         _--_  /,   \____/^\___/'   \  _--_
+       /~    ~\ / -____-|_|_|-____-\ /~    ~\ 
+     /________|___/~~~~\___/~~~~\ __|________\ 
+--~~~          ^ |     |   |     |  -     :  ~~~~~:~-_   
+                 `^-^-^'   `^-^-^'                    
+"""
+
+def menu():
+    largura = 35  # Você define a largura total do menu aqui
+    
+    print("=" * (largura + 4))
+    print(f"| {'BEM VINDO A JOINVILLE-BET'.center(largura)} |")
+    print(f"| {' '.center(largura)} |")
+    print(f"| {'QUAL JOGO VOCÊ DESEJA JOGAR?'.center(largura)} |")
+    print(f"| {' '.center(largura)} |")
+    
+    # Aqui o ljust garante que a barra direita fique sempre alinhada
+    print(f"| { '[1] Tigrinho 🦊'.ljust(largura) } |")
+    print(f"| { '[2] Dragão 🐉'.ljust(largura) } |")
+    print(f"| { '[3] Coelho 🐰'.ljust(largura) } |")
+    print(f"| { '[4] Panda 🐼'.ljust(largura) } |")
+    print(f"| { '[5] Touro 🐂'.ljust(largura) } |")
+    
+    print("=" * (largura + 4))
+    
+    escolha = int(input("Qual o jogo da vez? "))
+    return escolha

@@ -1,0 +1,224 @@
+import os
+
+# \\---- DESENHOS ANIMAIS ---\\
+    
+tigre = r"""          
+                                 __,,,,_
+                  _ __..-;''`--/'/ /.',-`-.
+              (`/' ` |  \ \ \\ / / / / .-'/`,_
+             /'`\ \   |  \ | \| // // / -.,/_,'-,
+            /<7' ;  \ \  | ; ||/ /| | \/    |`-/,/-.,_,/')
+           /  _.-, `,-\,__|  _-| / \ \/|_/  |    '-/.;.\'
+           `-`  f/ ;      / __/ \__ `/ |__/ |
+                `-'      |  -| =|\_  \  |-' |
+                      __/   /_..-' `  ),'  //
+                     ((__.-'((___..-'' \__.'
+"""
+
+dragao = r"""
+                            \||/
+                            |  0___oo
+                  /\  /\   / (__,,,,|
+                 ) /^\) ^\/ _)
+                 )   /^\/   _)
+                 )   _ /  / _)
+             /\  )/\/ ||  | )_)
+            <  >      |(,,) )__)
+             ||      /    \)___)\
+             | \____(      )___) )___
+              \______(_______;;; __;;;
+"""
+
+coelho = r"""
+                        ____     ____
+                      /'    |   |    \ 
+                    /    /  |   | \   \ 
+                  /    / |  |   |  \   \ 
+                 (   /   |  "" ""   |\   \ 
+                 | /   / /^\    /^\  \  _|   
+                  ~   | |   |  |   | | ~
+                      | |__O|__|O__| |
+                    /~~      \/     ~~\ 
+                   /   (      |      )  \ 
+             _--_  /,   \____/^\___/'   \  _--_
+           /~    ~\ / -____-|_|_|-____-\ /~    ~\ 
+         /________|___/~~~~\___/~~~~\ __|________\ 
+    --~~~          ^ |     |   |     |  -     :  ~~~~~:~-_   
+                     `^-^-^'   `^-^-^'                    
+"""
+
+urso = r"""
+                         ( )___( )
+                          /__oo   \
+                         ( \/     )
+                         | `=/    |
+                        /         \
+                       /  /    \   \
+                      /  (      \   \ 
+                     ( ,_/_      \   \
+                      \_ '=       \   )
+                        ""'       /  /
+                        ;        /  /'?
+                        :       (((( /
+                         `._   \  _ (
+                          __|   |  /_    
+                        ("__,.."'_._.)   
+"""
+
+touro = r"""
+                           _.-````'-,_
+                 _,.,_ ,-'`           `'-.,_
+               /)     (\                   '``-.
+              ((      ) )                      `\ 
+               \)    (_/                        )\ 
+                |       /)           '    ,'    / \ 
+                `\    ^'            '     (    /  ))
+                  |      _/\ ,     /    ,,`\   (  "`
+                   \Y,   |  \  \  | ````| / \_ \ 
+                     `)_/    \  \  )    ( >  ( >
+                              \( \(     |/   |/
+                             /_(/_(    /_(  /_(
+"""
+
+# \\---- FUNÇÕES NECESSÁRIAS ----\\
+def limpatela():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def menu():
+    print (" =========================================")
+    print ("|   BEM VINDO A JOINVILLE-BET.COM.BR      |")
+    print ("|                                         |")
+    print ("|      QUAL JOGO VOCÊ DESEJA JOGAR?       |")
+    print ("|                                         |")
+    print ("|     	    [1] Tigrinho🐯                |")
+    print ("|	    [2] Dragão  🐲	          |")		
+    print ("|    	    [3] Coelho  🐇  	          |")
+    print ("|    	    [4] Urso   🐻                 |")
+    print ("|     	    [5] Touro   🐂	          |")
+    print ("|                                         |")
+    print (" =========================================")
+    escolha = int(input("Qual o jogo da vez?  "))
+    print ("\n")
+    return escolha
+
+# \\---- FUNÇÕES DOS JOGOS ----\\
+def jogo_tigrinho(saldo):
+    limpatela()
+    
+    print (" ==========================================================")
+    print ("|   		          TIGRINHO DA SORTE   	  |")
+    print ("                                         ")
+    print (tigre)
+    print ("                                         ")
+    print (" ==========================================================")
+    aposta = int(input("Quanto deseja depositar?  "))
+    
+    return saldo
+
+def jogo_dragao(saldo):
+    limpatela()
+    
+    print (" ==========================================================")
+    print ("|   		        DRAGÃO DA FORTUNA   	               |")
+    print ("                                         ")
+    print (dragao)
+    print ("                                         ")
+    print (" ==========================================================")
+    aposta = int(input("Quanto deseja depositar?  "))
+    
+    return saldo
+
+def jogo_coelho(saldo):
+    limpatela()
+    
+    print (" ==========================================================")
+    print ("|   		          COELHO DA CARTOLA               	   |")
+    print ("                                         ")
+    print (coelho)
+    print ("                                         ")
+    print (" ==========================================================")
+    aposta = int(input("Quanto deseja depositar?  "))
+    
+    return saldo
+
+def jogo_urso(saldo):
+    limpatela()
+    
+    print (" ==========================================================")
+    print ("|   		          URSO ABENÇOADO                   	   |")
+    print ("                                         ")
+    print (urso)
+    print ("                                         ")
+    print (" ==========================================================")
+    aposta = int(input("Quanto deseja depositar?  "))
+    
+    return saldo
+
+def jogo_touro(saldo):
+    limpatela()
+    
+    print (" ==========================================================")
+    print ("|   		          TOURO DEVOLVE DINDIN             	   |")
+    print ("                                         ")
+    print (touro)
+    print ("                                         ")
+    print (" ==========================================================")
+    aposta = int(input("Quanto deseja depositar?  "))
+    
+    return saldo
+
+
+#------------------------funcao do saldo---------------------------------
+
+def funcao_saldo():
+    while True:
+        print ("| 💲 DEPOSITE SEU SALDO 💲 |")
+        print ("|	  [1] R$5,00   	 |")
+        print ("|	  [2] R$10,00 	 |")
+        print ("|	  [3] R$50,00  	 |")
+        print ("|	  [4] R$100,00 	 |")
+        opcao = int(input("Quanto deseja depositar?  ")) 
+        print ("\n")
+        if opcao == 1:
+            saldo = 5
+            break
+        elif opcao== 2:
+            saldo = 10
+            break
+        elif opcao == 3:
+            saldo = 50
+            break
+        elif opcao == 4:
+            saldo = 100
+            break
+        else:
+            saldo = 0
+            print ("Opção inválida, saldo não adicionado.\n")
+            continue
+    return saldo
+        
+
+
+        
+# \\---- AQUI COMEÇA O CÓDIGO MESMO ----\\
+
+jogo = menu()
+limpatela()
+saldo = funcao_saldo()
+print (f"Saldo de R${saldo},00 adicionado a sua conta.")
+print ("Que começem os jogos!🤑")
+
+while saldo > 0:
+    if jogo == 1:
+        saldo = jogo_tigrinho(saldo)
+    elif jogo == 2:
+        saldo = jogo_dragao(saldo)
+    elif jogo == 3:
+        saldo = jogo_coelho(saldo)
+    elif jogo == 4:
+        saldo = jogo_urso(saldo)
+    elif jogo == 5:
+        saldo = jogo_touro(saldo)
+    else :
+        print ("Opção inválida, selecione algum jogo mestre.")
+        break
